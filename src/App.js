@@ -39,14 +39,15 @@ function App() {
             <h2>{date}</h2>
           </div>
           <div className="temputure">
-            <h1>CURRENT: {Math.round(weather.main.temp)}</h1>
+            <h1>CURRENT:{Math.round(weather.main.temp)}</h1>
             <div className='sub-temp'>
-              <h3>HIGH : {Math.round(weather.main.temp_max)}</h3>
-              <h3>LOW: {Math.round(weather.main.temp_min)}</h3>
+              <h3>H:{Math.round(weather.main.temp_max)}</h3>
+              <h3>L:{Math.round(weather.main.temp_min)}</h3>
             </div>
           </div>
           <div className="weather">
-            <h2>{weather.weather[0].main}</h2>
+            <img src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}></img>
+            <h2>{weather.weather[0].description}</h2>
           </div>
         </div>
           ):(' ')}
