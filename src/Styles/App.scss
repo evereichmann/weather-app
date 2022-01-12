@@ -1,0 +1,63 @@
+@import "./Variables.scss";
+
+body {
+    margin:0%;
+    padding:0%;
+    background-color: $backgroundBlue;
+}
+
+.search-box .search-bar{
+    border-radius: 5px;
+    width: 75vw;
+    margin: 2vh 12.5vw 0vh 12.5vw;
+    box-shadow: 4px 4px $darkGrey;
+}
+
+.search-bar{
+    height: 4vh;
+}
+
+.data {
+    background-color: $lightBlue;
+    border-radius: 5px;
+    width: 75vw;
+    height: 80vh;
+    margin:5vh 12.5vw 0vh 12.5vw;
+    text-align: center;
+    box-shadow: 8px 8px $darkGrey;
+}
+
+.location, .temputure {
+    font-family: $titleFont;
+    padding-top: 1vh;
+    font-size: $largeSize;
+}
+
+.sub-temp, .weather, .today-date {
+    font-family: $bodyFont;
+    color:$darkGrey;
+}
+
+.today-date{
+    margin-top: -4vh;
+    font-size: $smallSize;
+}
+
+.sub-temp {
+    margin-top: -5vh;
+    display: inline-flex;
+    font-size: $smallSize;
+
+}
+
+.sub-temp h3 {
+   padding: 0vw 1vw 0vw 1vw; 
+}
+
+.weather h2{
+    margin-top: -5vh;  
+}
+
+img {
+    width: 25vh;
+}

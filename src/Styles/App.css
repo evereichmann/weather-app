@@ -1,0 +1,65 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  background-color: #8edddd;
+}
+
+.search-box .search-bar {
+  border-radius: 5px;
+  width: 75vw;
+  margin: 2vh 12.5vw 0vh 12.5vw;
+  -webkit-box-shadow: 4px 4px #5f5e5e;
+          box-shadow: 4px 4px #5f5e5e;
+}
+
+.search-bar {
+  height: 4vh;
+}
+
+.data {
+  background-color: #dbebeb;
+  border-radius: 5px;
+  width: 75vw;
+  height: 80vh;
+  margin: 5vh 12.5vw 0vh 12.5vw;
+  text-align: center;
+  -webkit-box-shadow: 8px 8px #5f5e5e;
+          box-shadow: 8px 8px #5f5e5e;
+}
+
+.location, .temputure {
+  font-family: Arial, Helvetica, san-serif;
+  padding-top: 1vh;
+  font-size: 30px;
+}
+
+.sub-temp, .weather, .today-date {
+  font-family: "Times New Roman", Times, serif;
+  color: #5f5e5e;
+}
+
+.today-date {
+  margin-top: -4vh;
+  font-size: 15px;
+}
+
+.sub-temp {
+  margin-top: -5vh;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 15px;
+}
+
+.sub-temp h3 {
+  padding: 0vw 1vw 0vw 1vw;
+}
+
+.weather h2 {
+  margin-top: -5vh;
+}
+
+img {
+  width: 25vh;
+}
+/*# sourceMappingURL=App.css.map */

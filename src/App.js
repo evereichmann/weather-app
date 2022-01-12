@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './App.css';
+import "./Styles/App.css";
 
 function App() {
   const api = {
@@ -25,33 +25,31 @@ function App() {
   const date = `${currentDate.getMonth()+1}/${currentDate.getDate()}/${currentDate.getFullYear()}`;
 
   return (
-    <div className="App">
-      <main>
+    <div className="app">
         <div className="search-box">
           <input type="text" className="search-bar" placeholder="Location..." onChange={e => setQuery(e.target.value)} value={query} onKeyPress={search}/>
         </div>
         {(typeof weather.main !="undefined") ? (
         <div className="data">
           <div className="location">
-            <h2>{weather.name}</h2>
+            <h1>{weather.name}</h1>
           </div>
           <div className="today-date">
-            <h2>{date}</h2>
+            <h3>{date}</h3>
           </div>
           <div className="temputure">
-            <h1>CURRENT:{Math.round(weather.main.temp)}</h1>
+            <h1>{Math.round(weather.main.temp)}°F</h1>
+          </div>
             <div className='sub-temp'>
               <h3>H:{Math.round(weather.main.temp_max)}</h3>
               <h3>L:{Math.round(weather.main.temp_min)}</h3>
             </div>
-          </div>
           <div className="weather">
             <img src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}></img>
             <h2>{weather.weather[0].description}</h2>
           </div>
         </div>
           ):(' ')}
-      </main>
     </div>
   );
 }
